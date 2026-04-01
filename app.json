@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Kindergame",
+    "slug": "kindergame",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "kindergame",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2DBCAF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "id.kindergame.app",
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.1051639643852-o0hldhar6fjd709hf6qik77pbgnai5h5"
+            ]
+          }
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundColor": "#2DBCAF"
+      },
+      "package": "id.kindergame.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.ico"
+    },
+    "plugins": [
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9dc86d06-9793-4b17-bbc2-1f3849089b05"
+      }
+    },
+    "owner": "kindergame"
+  }
+}

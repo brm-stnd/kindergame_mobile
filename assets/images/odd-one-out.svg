@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff5eb"/>
+      <stop offset="100%" style="stop-color:#e8f5f3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg)" rx="20"/>
+  
+  <!-- Row of shapes -->
+  <g filter="url(#shadow)">
+    <!-- Square 1 -->
+    <rect x="50" y="100" width="60" height="60" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="3"/>
+    <rect x="65" y="115" width="30" height="30" rx="4" fill="#3B82F6"/>
+    
+    <!-- Square 2 -->
+    <rect x="130" y="100" width="60" height="60" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="3"/>
+    <rect x="145" y="115" width="30" height="30" rx="4" fill="#3B82F6"/>
+    
+    <!-- Circle (ODD!) -->
+    <rect x="210" y="100" width="60" height="60" rx="12" fill="#fff" stroke="#EF4444" stroke-width="3"/>
+    <circle cx="240" cy="130" r="18" fill="#EF4444"/>
+    
+    <!-- Square 3 -->
+    <rect x="290" y="100" width="60" height="60" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="3"/>
+    <rect x="305" y="115" width="30" height="30" rx="4" fill="#3B82F6"/>
+  </g>
+  
+  <!-- Question mark badge on odd one -->
+  <circle cx="255" cy="105" r="15" fill="#EF4444"/>
+  <text x="255" y="112" text-anchor="middle" fill="#fff" font-family="sans-serif" font-weight="bold" font-size="18">?</text>
+  
+  <!-- Pointing hand -->
+  <text x="240" y="200" text-anchor="middle" font-size="40">👆</text>
+  
+  <!-- Title area -->
+  <rect x="80" y="230" width="240" height="35" rx="17" fill="#2DBCAF"/>
+  <text x="200" y="253" text-anchor="middle" fill="#fff" font-family="sans-serif" font-weight="bold" font-size="13">Temukan yang Berbeda</text>
+</svg>
