@@ -1,16 +1,16 @@
 # KinderGame Mobile App
 
-Aplikasi mobile KinderGame - Platform game edukasi untuk anak usia 3-6 tahun.
+Mobile app for KinderGame - Educational games platform for children aged 3-6 years.
 
 Built with **Expo** (React Native).
 
 ## Prerequisites
 
 - Node.js 18+ 
-- npm atau yarn
+- npm or yarn
 - Expo CLI (`npm install -g expo-cli`)
-- EAS CLI untuk build (`npm install -g eas-cli`)
-- Android Studio (untuk Android emulator) atau Xcode (untuk iOS simulator)
+- EAS CLI for builds (`npm install -g eas-cli`)
+- Android Studio (for Android emulator) or Xcode (for iOS simulator)
 
 ## Setup
 
@@ -27,30 +27,30 @@ Built with **Expo** (React Native).
 
 3. **Setup environment** (optional)
    
-   Buat file `.env` jika perlu konfigurasi API URL:
+   Create `.env` file if you need custom API URL:
    ```
    API_URL=https://kindergame.id
    ```
 
 ## Running (Development)
 
-### Expo Go (Recommended untuk development)
+### Expo Go (Recommended for development)
 
 ```bash
 npm start
-# atau
+# or
 expo start
 ```
 
-Scan QR code dengan:
-- **Android**: Expo Go app dari Play Store
-- **iOS**: Camera app atau Expo Go dari App Store
+Scan QR code with:
+- **Android**: Expo Go app from Play Store
+- **iOS**: Camera app or Expo Go from App Store
 
 ### Android Emulator
 
 ```bash
 npm run android
-# atau
+# or
 expo start --android
 ```
 
@@ -58,7 +58,7 @@ expo start --android
 
 ```bash
 npm run ios
-# atau
+# or
 expo start --ios
 ```
 
@@ -66,43 +66,43 @@ expo start --ios
 
 ```bash
 npm run web
-# atau
+# or
 expo start --web
 ```
 
 ## Building (Production)
 
-### Login ke EAS
+### Login to EAS
 
 ```bash
 eas login
 ```
 
-### Build Android APK (untuk testing)
+### Build Android APK (for testing)
 
 ```bash
 eas build --platform android --profile preview
 ```
 
-Output: APK file yang bisa di-install langsung.
+Output: APK file that can be installed directly.
 
-### Build Android AAB (untuk Play Store)
+### Build Android AAB (for Play Store)
 
 ```bash
 eas build --platform android --profile production
 ```
 
-Output: AAB file untuk upload ke Google Play Console.
+Output: AAB file for upload to Google Play Console.
 
-### Build iOS (untuk App Store)
+### Build iOS (for App Store)
 
 ```bash
 eas build --platform ios --profile production
 ```
 
-Butuh Apple Developer account ($99/year).
+Requires Apple Developer account ($99/year).
 
-### Build keduanya sekaligus
+### Build both platforms
 
 ```bash
 eas build --platform all --profile production
@@ -110,10 +110,10 @@ eas build --platform all --profile production
 
 ## Build Profiles
 
-| Profile | Platform | Output | Kegunaan |
+| Profile | Platform | Output | Use Case |
 |---------|----------|--------|----------|
-| `development` | All | Dev client | Development dengan hot reload |
-| `preview` | Android | APK | Testing internal |
+| `development` | All | Dev client | Development with hot reload |
+| `preview` | Android | APK | Internal testing |
 | `production` | Android | AAB | Play Store |
 | `production` | iOS | IPA | App Store |
 
@@ -135,13 +135,13 @@ kindergame_mobile/
     │   ├── HomeScreen.tsx
     │   ├── GamesScreen.tsx
     │   ├── ProfileScreen.tsx
-    │   └── growth/      # Tumbuh kembang screens
+    │   └── growth/      # Child growth tracking screens
     └── games/           # Native game components
 ```
 
 ## API
 
-Aplikasi terhubung ke backend KinderGame:
+The app connects to KinderGame backend:
 - **Production**: `https://kindergame.id/api`
 - **Staging**: `https://staging.kindergame.id/api`
 
